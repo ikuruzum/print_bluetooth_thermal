@@ -165,7 +165,7 @@ public class SwiftPrintBluetoothThermalPlugin: NSObject, CBCentralManagerDelegat
                 let chunkData = data.subdata(in: chunkRange)
                 //print("chunkData count: \(chunkData.count)")
                 // Envía el fragmento para imprimir utilizando la característica deseada
-                self.connectedPeripheral?.writeValue(chunkData, for: characteristic, type: .withoutResponse)
+                self.connectedPeripheral?.writeValue(chunkData, for: characteristic, type: .withResponse)
 
                 offset += chunkSize
             }
