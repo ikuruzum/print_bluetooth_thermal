@@ -34,7 +34,7 @@ flutter:
       ios:
         pluginClass: PrintBluetoothThermalPlugin
       windows:
-        default_package: PrintBluetoothThermalPlugin
+          supported: false
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
