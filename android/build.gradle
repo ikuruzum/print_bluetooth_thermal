@@ -25,6 +25,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace "com.example.print_bluetooth_thermal"
+
     compileSdkVersion 31
 
     sourceSets {
